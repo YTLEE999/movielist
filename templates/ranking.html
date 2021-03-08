@@ -1,0 +1,66 @@
+<div class="container my-3">
+    <h3>Ranking</h3>
+    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-100" role="listbox">
+            {% for ranking in ranking_options: %}
+            <div class="carousel-item row no-gutters{% if loop.index == 1 %} active{% endif %}">
+                <a href="{{ url_for('get_movie', movie_id=ranking_options[0].id) }} "><div class="col-3 float-left">
+                    <img class="img-fluid" src="https://image.tmdb.org/t/p/w1280/{{ranking_options[0].backdrop_path}}">
+                    <div class="carousel-caption-bottom d-none d-sm-block"><p>{{ ranking_options[0].title }}</p></div>
+                </div>
+                </a>
+                <a href="{{ url_for('get_movie', movie_id=ranking_options[1].id) }} "><div class="col-3 float-left">
+                    <img class="img-fluid" src="https://image.tmdb.org/t/p/w1280/{{ranking_options[1].backdrop_path}}">
+                    <div class="carousel-caption-bottom d-none d-sm-block"><p>{{ ranking_options[1].title }}</p></div>
+                </div>
+                </a>
+                <a href="{{ url_for('get_movie', movie_id=ranking_options[2].id) }} "><div class="col-3 float-left">
+                    <img class="img-fluid" src="https://image.tmdb.org/t/p/w1280/{{ranking_options[2].backdrop_path}}">
+                    <div class="carousel-caption-bottom d-none d-sm-block"><p>{{ ranking_options[2].title }}</p></div>
+                </div>
+                </a>
+                <a href="{{ url_for('get_movie', movie_id=ranking_options[3].id) }} "><div class="col-3 float-left">
+                    <img class="img-fluid" src="https://image.tmdb.org/t/p/w1280/{{ranking_options[3].backdrop_path}}">
+                    <div class="carousel-caption-bottom d-none d-sm-block"><p>{{ ranking_options[3].title }}</p></div>
+                </div>
+                </a>
+            </div>
+            <div class="carousel-item row no-gutters" {{ loop.index0 }}>
+                <a href="{{ url_for('get_movie', movie_id=ranking_options[0].id) }} "><div class="col-3 float-left">
+                    <img class="img-fluid" src="https://image.tmdb.org/t/p/w1280/{{ranking_options[4].backdrop_path}}">
+                    <div class="carousel-caption-bottom d-none d-sm-block"><p>{{ ranking_options[4].title }}</p></div>
+                </div>
+                </a>
+                <a href="{{ url_for('get_movie', movie_id=ranking_options[1].id) }} "><div class="col-3 float-left">
+                    <img class="img-fluid" src="https://image.tmdb.org/t/p/w1280/{{ranking_options[5].backdrop_path}}">
+                    <div class="carousel-caption-bottom d-none d-sm-block"><p>{{ ranking_options[5].title }}</p></div>
+                </div>
+                </a>
+                <a href="{{ url_for('get_movie', movie_id=ranking_options[2].id) }} "><div class="col-3 float-left">
+                    <img class="img-fluid" src="https://image.tmdb.org/t/p/w1280/{{ranking_options[6].backdrop_path}}">
+                    <div class="carousel-caption-bottom d-none d-sm-block"><p>{{ ranking_options[6].title }}</p></div>
+                </div>
+                </a>
+                <a href="{{ url_for('get_movie', movie_id=ranking_options[3].id) }} "><div class="col-3 float-left">
+                    <img class="img-fluid" src="https://image.tmdb.org/t/p/w1280/{{ranking_options[7].backdrop_path}}">
+                    <div class="carousel-caption-bottom d-none d-sm-block"><p>{{ ranking_options[7].title }}</p></div>
+                </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+    
+    
+    
+    
+    

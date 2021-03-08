@@ -1,0 +1,14 @@
+{%- extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <!-- Slider -->                      
+    <img src="https://image.tmdb.org/t/p/w1280/{{ img_url }}" alt="{{title}}" style="box-shadow: 10px 10px 30px rgba(54, 54, 54, 0.5);">
+      <h1>{{ title }}</h1>
+      <p>{{ overview }}</p>
+      <a href="{{ url_for('add_movie', movie_id=movie_id) }} ">
+        <button type="button" class="btn btn-outline-success">Add to My List</button>
+      </a>
+    </div><!--/Slider-->
+{% endblock %}
+
