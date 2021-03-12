@@ -37,19 +37,19 @@ The document is simple, but with the structure could make easier and faster to r
 
 ![](https://github.com/YTLEE999/movielist/blob/9de54970ca11fe24ec29d9328a87e4351c599684/demo/flask_basic_template.JPG)
 
-### Configuring with flask
+#### Configuring with flask
 
 ![](https://github.com/YTLEE999/movielist/blob/9de54970ca11fe24ec29d9328a87e4351c599684/demo/flask_basic_template.JPG)
 
-### TMDB APIs
+#### TMDB APIs
 
 ![](https://github.com/YTLEE999/movielist/blob/9de54970ca11fe24ec29d9328a87e4351c599684/demo/api.JPG)
 
-### User account
+#### User account
 
 ![](https://github.com/YTLEE999/movielist/blob/9de54970ca11fe24ec29d9328a87e4351c599684/demo/useraccount.jpg)
 
-### Database
+#### Database
 
 ![](https://github.com/YTLEE999/movielist/blob/9de54970ca11fe24ec29d9328a87e4351c599684/demo/database_relations.JPG)
 
